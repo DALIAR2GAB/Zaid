@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="studentModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="student_log">
+    <Key>
+      <PropertyRef Name="user_namee" />
+    </Key>
+    <Property Name="user_namee" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="passwordd" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="students">
+    <Key>
+      <PropertyRef Name="student_id" />
+    </Key>
+    <Property Name="student_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Namee" Type="varchar" MaxLength="50" />
+    <Property Name="birthdate" Type="date" />
+    <Property Name="gender" Type="varchar" MaxLength="50" />
+    <Property Name="grade" Type="int" />
+    <Property Name="course" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="studentss">
+    <Key>
+      <PropertyRef Name="student_id" />
+    </Key>
+    <Property Name="student_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Namee" Type="varchar" MaxLength="50" />
+    <Property Name="birthdate" Type="varchar" MaxLength="70" />
+    <Property Name="gender" Type="varchar" MaxLength="50" />
+    <Property Name="grade" Type="int" />
+    <Property Name="course" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="teacher_log">
+    <Key>
+      <PropertyRef Name="user_namee" />
+    </Key>
+    <Property Name="user_namee" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="passwordd" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityContainer Name="studentModelStoreContainer">
+    <EntitySet Name="student_log" EntityType="Self.student_log" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="students" EntityType="Self.students" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="studentss" EntityType="Self.studentss" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="teacher_log" EntityType="Self.teacher_log" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

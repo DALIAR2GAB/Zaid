@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="studentModelStoreContainer" CdmEntityContainer="studentEntities">
+    <EntitySetMapping Name="student_log">
+      <EntityTypeMapping TypeName="studentModel.student_log">
+        <MappingFragment StoreEntitySet="student_log">
+          <ScalarProperty Name="user_namee" ColumnName="user_namee" />
+          <ScalarProperty Name="passwordd" ColumnName="passwordd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="students">
+      <EntityTypeMapping TypeName="studentModel.student">
+        <MappingFragment StoreEntitySet="students">
+          <ScalarProperty Name="student_id" ColumnName="student_id" />
+          <ScalarProperty Name="Namee" ColumnName="Namee" />
+          <ScalarProperty Name="birthdate" ColumnName="birthdate" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="grade" ColumnName="grade" />
+          <ScalarProperty Name="course" ColumnName="course" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="studentsses">
+      <EntityTypeMapping TypeName="studentModel.studentss">
+        <MappingFragment StoreEntitySet="studentss">
+          <ScalarProperty Name="student_id" ColumnName="student_id" />
+          <ScalarProperty Name="Namee" ColumnName="Namee" />
+          <ScalarProperty Name="birthdate" ColumnName="birthdate" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="grade" ColumnName="grade" />
+          <ScalarProperty Name="course" ColumnName="course" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="teacher_log">
+      <EntityTypeMapping TypeName="studentModel.teacher_log">
+        <MappingFragment StoreEntitySet="teacher_log">
+          <ScalarProperty Name="user_namee" ColumnName="user_namee" />
+          <ScalarProperty Name="passwordd" ColumnName="passwordd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
